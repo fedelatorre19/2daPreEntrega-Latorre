@@ -20,13 +20,11 @@ while (continuar) {
     continuar = (respuesta === "sí" || respuesta === "si" || respuesta === "Sí" || respuesta === "Si" || respuesta === "S" || respuesta === "s");
 }
 
-let mensaje = `Rutina de ${nombre}:  
-`;
+let mensaje = `Rutina de ${nombre}: `;
 
 for (let i = 0; i < rutinaEjercicios.length; i++) {
     const { ejercicio, peso, series, repeticiones } = rutinaEjercicios[i];
-    mensaje += `
-    Ejercicio: ${ejercicio}, Carga: ${peso} kg, Series: ${series}, Repeticiones: ${repeticiones}`;
+    mensaje += ` Ejercicio: ${ejercicio}, Carga: ${peso} kg, Series: ${series}, Repeticiones: ${repeticiones} `;
 }
 
 alert(mensaje);
